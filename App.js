@@ -94,8 +94,9 @@ export default class App extends Component<{}> {
     return (
       <View style={styles.container}>
 
-        <View> style={styles.header}
-          <Text style={styles.header}>Mapas</Text>
+        <View style={styles.header}>
+
+          <Text style={styles.titulo}>Mapas</Text>
         </View>
         <View style={styles.containerMapa}>
           <MapView
@@ -125,7 +126,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center',
+
     backgroundColor: '#F5FCFF',
   },
   welcome: {
@@ -139,19 +140,29 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   map: {
-    heigth: 100,
-    width: 100,
+    flex: 1,
     justifyContent: 'flex-end',
- 
     alignItems: 'center',
   },
   header: {
+
     backgroundColor: '#cccc',
-    flex: 0.2
+    flex: 0.1,
+    flexDirection: 'row',
+    paddingTop: 28,
+
+
   },
   containerMapa: {
     flex: 1,
-    backgroundColor:'red'
+    backgroundColor: 'red'
 
+  },
+  titulo: {
+    //backgroundColor: 'blue',
+     flex: 1, 
+     textAlign: 'center',
+     fontSize:25,
+     
   }
 });
