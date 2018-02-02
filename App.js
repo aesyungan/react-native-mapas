@@ -150,8 +150,7 @@ const styles = StyleSheet.create({
     flex: 0.1,
     flexDirection: 'row',
     paddingTop: 28,
-
-
+    //by ayungan
   },
   containerMapa: {
     flex: 1,
